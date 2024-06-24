@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevergear</title>
+    <style>
+        body {
+        background-size: cover;
+        background-image: url('imagens/fundo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-image: url('imagens/banner.png');
+            background-position: center center;
+            background-size: cover;
+        }
+        header img {
+            width: 100%;
+        }
+        header img.severname {
+            max-width: 750px;
+            display: block;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 10px;
+ 
+
+        }
+        nav > div > a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.5s;
+            font-weight: bold;
+            background-color: rgba(113, 28, 182, 0.301);
+        }
+        nav > div > #home {
+            border-radius: 10px 10px 0px 0px;
+            background-color: #152D59;
+            padding-bottom: 18px;
+        }
+        nav > div> a:hover {
+            background-color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            color: black;
+        }
+        main {
+            min-width: 300;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            margin-top: 10px;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        article > h1 {
+            background-image: linear-gradient(to right, rgba(255, 255, 0, 0.459), rgba(255, 0, 0, 0.493));
+        }
+        img {
+            width: 100%;
+        }
+        img #wllpp {
+            max-width: 400px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/NEVERGEAR-24-06-2024.png" class="severname" alt="Nevergear Title">
+    
+        <nav>
+            <div>
+                <a href="index.html" id="home" target="_self">Home</a>
+                <a href="#" id="server">Server</a>
+                <a href="aboutpage.html" id="about" target="_self">About</a>
+                <a href="#" id="conect">Contact</a>
+            </div>
+            <div id="registermain">
+                <a href="loginpage.html" id="login">Login</a>
+                <a href="#" id="signup">SignUp</a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <article>
+          <img id="wllpp" src="imagens/zombiewallpaper.jpg" alt="">
+          <img id="wllpp" src="imagens/ordawallpaper.jpg" alt="">
+        </article>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevergear</title>
+    <style>
+        body {
+
+        background-size: cover;
+        background-image: url('imagens/fundo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-image: url('imagens/banner.png');
+            background-position: center center;
+            background-size: cover;
+        }
+        header img {
+            width: 100%;
+        }
+        header img.severname {
+            max-width: 750px;
+            display: block;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 10px;
+        }
+        nav > div > a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.5s;
+            font-weight: bold;
+            background-color: rgba(113, 28, 182, 0.301);
+        }
+        nav > div > #about {
+            border-radius: 10px 10px 0px 0px;
+            background-color: #152D59;
+            padding-bottom: 18px;
+        }
+        nav > div> a:hover {
+            background-color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            color: black;
+        }
+        main {
+            min-width: 300;
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+            border-radius: 0px 0px 10px 10px;
+            margin-top: 10px;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        article > h1 {
+            background-image: linear-gradient(to right, rgba(255, 255, 0, 0.459), rgba(255, 0, 0, 0.493));
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/NEVERGEAR-24-06-2024.png" class="severname" alt="Nevergear Title">
+    
+        <nav>
+            <div>
+                <a href="index.html" id="home" target="_self">Home</a>
+                <a href="#" id="server">Server</a>
+                <a href="aboutpage.html" id="about" target="_self">About</a>
+                <a href="#" id="conect">Contact</a>
+            </div>
+            <div id="registermain">
+                <a href="loginpage.html" id="login">Login</a>
+                <a href="#" id="signup">SignUp</a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <article>
+            <h1>O que é Nevergear?</h1>
+            <p>Talvez alguns de vocês asociem ao dispositivo de realidade virtual visto em <a href="https://pt.wikipedia.org/wiki/Sword_Art_Online">Swor Art Online</a>, porém, Nevergear é muito mais do que um simples projeto. É a materialização de uma ideia que visa quebrar as paredes que nos impedem de fazermos mais do que podemos. Em seu núcleo, Nevergear é um servidor que permite jogar em modpacks criados e montados para cada tipo de experiência envolvente como nunca vista antes.
+            </p>
+            <p>Nosso objetivo é oferecer aos usuários não apenas entretenimento, mas uma janela para novos mundos, possibilidades infinitas de aprendizado e colaboração global. Com o Nevergear, queremos ultrapassar barreiras e transformar a maneira como as pessoas jogam o tão amado jogo quadrado.</p>
+        </article>
+    </main>
+    
+</body>
+</html>
