@@ -6,7 +6,6 @@
     <title>Nevergear</title>
     <style>
         body {
-
         background-size: cover;
         background-image: url('imagens/fundo.jpg');
         background-repeat: no-repeat;
@@ -33,6 +32,8 @@
             display: flex;
             justify-content: space-between;
             padding: 15px 10px;
+ 
+
         }
         nav > div > a {
             color: white;
@@ -43,7 +44,7 @@
             font-weight: bold;
             background-color: rgba(113, 28, 182, 0.301);
         }
-        nav > div > #about {
+        nav > div > #server {
             border-radius: 10px 10px 0px 0px;
             background-color: #152D59;
             padding-bottom: 18px;
@@ -60,18 +61,73 @@
             margin: auto;
             margin-bottom: 30px;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
-            border-radius: 0px 0px 10px 10px;
             margin-top: 10px;
 
         }
         a {
             text-decoration: none;
         }
-        article > h1 {
-            background-image: linear-gradient(to right, rgba(255, 255, 0, 0.459), rgba(255, 0, 0, 0.493));
+        div> h1 {
+            color: white;
+            text-align: center;
+            padding-bottom: 50px;
         }
+        div > h3 {
+            color: white;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+        }
+        .input.group {
+            position: relative;
+    
+        }
+        .form {
+            margin: auto;
+        }
+        .input {
+            border: solid 1.5px lightgray;
+            border-radius: 7px;
+            background: none;
+            padding: 15px;
+            font-size: 18px;
+            color: #f5f5f5;
+        }
+        .label {
+            position: absolute;
+            left: 15px;
+            color: #9e9e9e;
+            pointer-events: none;
+            transform: translateY(15px);
+            font-size: 18px;
+            transition: 150ms cubic-bezier(0.4,0,0.2,1);
+        }
+        .input:focus, input:valid {
+            outline: none;
+            border: 1.5px solid white;
+        }
+        .input:focus ~ label, input:valid ~ label {
+            transform: translateX(-10%) translateY(-50%) scale(0.9);
+            background-color: #152D59;
+            padding: 0. 2em;
+            color: rgb(255, 255, 255);
+        }
+        .box {
+            transition: opacity 8.6s ease;
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px; 
+            justify-content: space-between;
+            padding: 15px 10px;      
+        }
+        .container:hover > :not(:hover) {
+            opacity: 8.4;
+            
+        }
+        
     </style>
 </head>
 <body>
@@ -90,17 +146,11 @@
                 <a href="#" id="signup">SignUp</a>
             </div>
         </nav>
-        
     </header>
-
     <main>
-        <article>
-            <h1>O que é Nevergear?</h1>
-            <p>Talvez alguns de vocês asociem ao dispositivo de realidade virtual visto em <a href="https://pt.wikipedia.org/wiki/Sword_Art_Online">Swor Art Online</a>, porém, Nevergear é muito mais do que um simples projeto. É a materialização de uma ideia que visa quebrar as paredes que nos impedem de fazermos mais do que podemos. Em seu núcleo, Nevergear é um servidor que permite jogar em modpacks criados e montados para cada tipo de experiência envolvente como nunca vista antes.
-            </p>
-            <p>Nosso objetivo é oferecer aos usuários não apenas entretenimento, mas uma janela para novos mundos, possibilidades infinitas de aprendizado e colaboração global. Com o Nevergear, queremos ultrapassar barreiras e transformar a maneira como as pessoas jogam o tão amado jogo quadrado.</p>
-        </article>
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
     </main>
-    
 </body>
 </html>
