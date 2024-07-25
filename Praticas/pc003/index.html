@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #a8dadc;
+            color: #1d3557;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1d3557;
+        }
+        section {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        footer {
+            background-color: #a8dadc;
+            color: #1d3557;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            display: none;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .active {
+            display: block;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #457b9d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1d3557;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .login-signup {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao site pessoal de Harrison</h1>
+        <nav>
+            <a href="#inicio" onclick="showSection('inicio')">Início</a>
+            <a href="#sobremim" onclick="showSection('sobremim')">Sobre Mim</a>
+            <a href="#contato" onclick="showSection('contato')">Contato</a>
+            <a href="#loja" onclick="showSection('loja')">Loja</a>
+            <a href="#login" onclick="showSection('login')">Login</a>
+            <a href="#signup" onclick="showSection('signup')">Signup</a>
+        </nav>
+    </header>
+    <section id="inicio" class="content active">
+        <h2>Início</h2>
+        <p>Bem-vindo ao site pessoal de Harrison! Explore minhas experiências e projetos.</p>
+    </section>
+    <section id="sobremim" class="content">
+        <h2>Sobre Mim</h2>
+        <p>Sou Harrison, um entusiasta de tecnologia e programação. Estou sempre buscando aprender e crescer profissionalmente na área de desenvolvimento de software.</p>
+    </section>
+    <section id="contato" class="content">
+        <h2>Contato</h2>
+        <div class="form-container">
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <section id="loja" class="content">
+        <h2>Loja</h2>
+        <p>Aqui você pode encontrar os produtos e serviços que ofereço. (Conteúdo da loja será adicionado futuramente)</p>
+    </section>
+    <section id="login" class="content">
+        <h2>Login</h2>
+        <div class="form-container">
+            <form>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+    <section id="signup" class="content">
+        <h2>Signup</h2>
+        <div class="form-container">
+            <form>
+                <label for="newusername">Usuário:</label>
+                <input type="text" id="newusername" name="newusername" required>
+                <label for="newpassword">Senha:</label>
+                <input type="password" id="newpassword" name="newpassword" required>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Harrison. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
