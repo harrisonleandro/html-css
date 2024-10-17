@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header {
+    background-color: #1d3557;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header > h1 {
+    color: white;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+section {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+footer {
+    background-color: #a8dadc;
+    color: #1d3557;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.content {
+    display: none;
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.active {
+    display: block;
+}
+button {
+    padding: 10px 20px;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1d3557;
+}
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 10px 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.login-signup {
+    display: flex;
+    justify-content: space-around;
+}
